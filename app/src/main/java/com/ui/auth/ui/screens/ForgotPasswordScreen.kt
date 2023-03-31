@@ -20,10 +20,11 @@ import com.ui.auth.ui.theme.*
 @Composable
 fun ForgotPasswordScreen() {
     var email by remember { mutableStateOf("") }
-    Column (
+    Column(
         modifier = Modifier.fillMaxWidth(),
         horizontalAlignment = Alignment.CenterHorizontally
-            ){
+    ) {
+
         Text(
             text = "FORGOT YOUR PASSWORD?",
             fontFamily = Poppins,
@@ -140,14 +141,16 @@ fun ForgotPasswordScreen() {
             }
 
         }
-        TextButton(onClick = { /*TODO*/ },
+        TextButton(
+            onClick = { /*TODO*/ },
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(top = 20.dp)
         ) {
-            Text(text = "Remember password? Login",
+            Text(
+                text = "Remember password? Login",
                 fontFamily = Poppins,
-                color= SecondaryColor,
+                color = SecondaryColor,
                 fontSize = 12.sp,
                 fontWeight = FontWeight.SemiBold,
             )

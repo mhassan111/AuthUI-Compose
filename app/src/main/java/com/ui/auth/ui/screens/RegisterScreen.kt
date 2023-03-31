@@ -25,6 +25,7 @@ fun RegisterScreen() {
     var password by remember { mutableStateOf("") }
     var checkBoxOne by remember { mutableStateOf(true) }
     var checkBoxTwo by remember { mutableStateOf(true) }
+
     Column(
         horizontalAlignment = Alignment.CenterHorizontally,
         modifier = Modifier.padding(top = 20.dp)
@@ -34,6 +35,12 @@ fun RegisterScreen() {
             contentDescription = "",
             modifier = Modifier.size(160.dp)
         )
+
+//        Image(
+//            painter = painterResource(id = R.drawable.ic_register_img),
+//            contentDescription = "",
+//            modifier = Modifier.size(160.dp)
+//        )
 
         Text(
             text = "CREATE YOUR ACCOUNT",
