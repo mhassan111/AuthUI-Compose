@@ -35,13 +35,7 @@ fun RegisterScreen() {
             contentDescription = "",
             modifier = Modifier.size(160.dp)
         )
-
-//        Image(
-//            painter = painterResource(id = R.drawable.ic_register_img),
-//            contentDescription = "",
-//            modifier = Modifier.size(160.dp)
-//        )
-
+        
         Text(
             text = "CREATE YOUR ACCOUNT",
             textAlign = TextAlign.Center,
